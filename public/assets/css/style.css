@@ -1,9 +1,30 @@
+body{
+    background-color: black;
+}
+
 h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+img{
     display: flex;
     justify-content: center;
 }
 
 form{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    color: white;
+    display: inline-block;
+}
+
+.listSelection{
     display: flex;
     justify-content: center;
 }

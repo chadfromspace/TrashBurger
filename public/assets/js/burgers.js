@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".burgerForm").on("submit",function(event){
+    $(document).on("submit",function(event){
         event.preventDefault();
         var newBurger = {
           name: $("#burgerForm").val(),
@@ -8,8 +8,8 @@ $(document).ready(function(){
         $.ajax("/api/burgers", {
           type: "POST",
           data: newBurger,
+          success: location.reload()
         }).then(function(){
-        location.reload();
         })
     });
 
@@ -19,6 +19,6 @@ $(document).ready(function(){
           type: "PUT"
         }).then(function(){
           location.reload();
-          });
+          })
     });
 });
