@@ -21,6 +21,7 @@ form{
 }
 
 ul{
+    list-style-type: none;
     color: white;
     display: inline-block;
 }
