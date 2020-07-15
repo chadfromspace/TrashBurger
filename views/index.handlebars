@@ -1,0 +1,26 @@
+<h1>Trash Burger</h1>
+
+<ul class="ul1">
+  {{#each burgers}}
+    {{#unless eaten}}
+    {{>burgers/burger-block eaten=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<ul class="ul2">
+  {{#each burgers}}
+    {{#if eaten}}
+        {{> burgers/burger-block eaten=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<br>
+
+<form class="burgerForm">
+  <div class="form">
+    <input type="text" id="burgerForm" name="name">
+  </div>
+  <button type="submit">Add Burger</button>
+</form>
