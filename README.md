@@ -6,7 +6,7 @@
 
   An application that allows you to add terrible burgers to a list and then move them to another list by clicking a button.
 
-   ![IMG](./public/assets/img/img.png)
+   ![IMG](./public/assets/img/readmeimg.png)
 
   ## Table of Contents
 
